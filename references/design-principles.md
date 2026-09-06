@@ -58,20 +58,20 @@
 2. 在工作中或生活中用过
 3. 能教给别人
 
-## 同步学习沉淀（自动消化）
+## 沉淀与学习
 
-原始材料丢进 `00-Inbox/待沉淀/` 后，用户说「同步学习沉淀的知识」，就启动自动消化流程：
+`00-Inbox/待沉淀/` 存**资料**，`10-Areas/` 存**沉淀后的笔记**。用户说「同步学习沉淀的知识」，启动流程：
 
 ```text
-扫描待沉淀 → 逐个调用 learn-anything-fast 学习消化 → 生成知识卡片 → 升格到 10-Areas → 原文标记 √
+扫描资料 → 沉淀成 Areas 笔记 → 逐个询问「要不要学习」→ 学习（learn-anything-fast）→ 笔记旁打勾 √
 ```
 
-- 默认用 Compress 模式：把每篇材料压缩成一张知识卡片（一句话定义 + 关键概念 + 例子 + 常见错误 + 自测题）。
-- 卡片升格到 `10-Areas/{领域}/` 前，必须满足升格三标准，不满足就继续学。
-- 升格后原文标记 √ 并链接产出，避免重复学习。
-- 宿主没有 learn-anything-fast 技能时，用等价学习循环（map→focus→compress→teach-back），产出格式一致。
+- **沉淀**：把资料消化成结构化笔记，升格到 `10-Areas/{领域}/`（读 → 判断归属 → 写笔记 → 放入 Area）。
+- **询问**：每沉淀完一篇，问「要不要学习这篇？」。不要则跳过，不打勾。
+- **学习**：要则用 `learn-anything-fast` 深度学习（默认 Compress 模式）。
+- **打勾**：学习完，在 Areas 笔记文件名末尾加 √（或 `status: learned`），标记「已学习」。
 
-详细格式与调用见 [references/learning-sync.md](references/learning-sync.md)。
+详细格式见 [references/learning-sync.md](references/learning-sync.md)。
 
 ### 两种沉淀模式
 

@@ -43,14 +43,14 @@
       "id": 4,
       "name": "sync-learn-deposited",
       "prompt": "同步学习沉淀的知识",
-      "expected_output": "扫描 00-Inbox/待沉淀/ 下未处理内容，逐个调用 learn-anything-fast（Compress 模式）消化成知识卡片，升格到 10-Areas 对应领域，原文标记 √ 并链接产出",
+      "expected_output": "扫描 00-Inbox/待沉淀/ 下的资料，逐篇沉淀成 10-Areas 结构化笔记，每篇沉淀后询问「要不要学习」，要则用 learn-anything-fast 学习，学完在笔记旁打勾（文件名 √ 或 status: learned）",
       "files": [],
       "expectations": [
-        "先扫描待沉淀目录找出未处理内容",
-        "调用学习技能消化（默认 Compress 模式）",
-        "知识卡片含一句话定义、例子、自测题",
-        "升格到 10-Areas 对应领域",
-        "原文标记 √ 并链接产出"
+        "先扫描待沉淀目录找出资料",
+        "沉淀成 Areas 笔记，而非直接学习",
+        "每篇沉淀后询问用户是否学习",
+        "要学习时调用 learn-anything-fast（默认 Compress）",
+        "学习完在 Areas 笔记旁打勾，不是原文"
       ]
     }
   ]

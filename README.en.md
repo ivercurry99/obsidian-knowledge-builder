@@ -18,7 +18,7 @@
 
 Knowledge Base Builder is an **Obsidian-adapted, agent-agnostic Skill** that guides you to scaffold a structured "second brain" knowledge base in about 3 minutes, then turns deposited material into reusable knowledge cards. Any agent with "read/write files + ask questions" capabilities can run it.
 
-You don't need any knowledge-management theory. Say "help me build a knowledge base", answer a few questions, and it generates a structure deterministically with a script — **no missing folders, no duplicates, sensible defaults when you don't have an answer yet**. Later say "sync-learn my deposited knowledge" and it digests the material in `00-Inbox/待沉淀/` into knowledge cards and promotes them into `10-Areas/`.
+You don't need any knowledge-management theory. Say "help me build a knowledge base", answer a few questions, and it generates a structure deterministically with a script — **no missing folders, no duplicates, sensible defaults when you don't have an answer yet**. Later say "sync-learn my deposited knowledge" and it turns each item in `00-Inbox/待沉淀/` into a structured note in `10-Areas/`, asks after each one whether you want to "learn" it, learns the ones you pick via learn-anything-fast, and marks a √ beside the notes you've learned.
 
 ## Table of contents
 
@@ -95,13 +95,13 @@ npx skills add ivercurry99/obsidian-knowledge-builder
 help me build a knowledge base
 ```
 
-Then follow the guided questions. To digest deposited material, say:
+Then follow the guided questions. To deposit and learn collected material, say:
 
 ```text
 sync-learn my deposited knowledge
 ```
 
-It digests each item in `00-Inbox/待沉淀/` into a knowledge card (via a learning skill) and promotes it into `10-Areas/`. See [`SKILL.md`](./SKILL.md) for parameters and [`examples/数据分析师示例.md`](examples/数据分析师示例.md) for a full example.
+It turns each item in `00-Inbox/待沉淀/` into a structured note in `10-Areas/`, asks after each one whether you want to learn it, learns the ones you pick via learn-anything-fast, and marks a √ beside the learned notes. See [`SKILL.md`](./SKILL.md) for parameters and [`examples/数据分析师示例.md`](examples/数据分析师示例.md) for a full example.
 
 ## A full example
 
