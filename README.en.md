@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="Knowledge Base Builder: scaffold your second brain in 3 minutes with a four-layer flow from 00-Inbox to 10-Areas / 20-Projects / 30-Output">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Obsidian Second Brain: scaffold your second brain knowledge base in 3 minutes with a four-layer flow from 00-Inbox to 10-Areas / 20-Projects / 30-Output">
 </p>
 
 <p align="center">
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-8a5cf5"></a>
-  <a href="https://github.com/ivercurry99/obsidian-knowledge-builder/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ivercurry99/obsidian-knowledge-builder/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/ivercurry99/yy-obsidian-second-brain/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ivercurry99/yy-obsidian-second-brain/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-50a0fa?logo=python&logoColor=white">
   <img alt="Platform" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-4a4a52">
   <img alt="Network" src="https://img.shields.io/badge/network-not%20required-2ea043">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/ivercurry99/obsidian-knowledge-builder?color=50a0fa">
-  <img alt="Stars" src="https://img.shields.io/github/stars/ivercurry99/obsidian-knowledge-builder?style=social">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/ivercurry99/yy-obsidian-second-brain?color=50a0fa">
+  <img alt="Stars" src="https://img.shields.io/github/stars/ivercurry99/yy-obsidian-second-brain?style=social">
 </p>
 
 <p align="center"><b>English</b>: README.en.md · <b>中文</b>: <a href="./README.md">README.md</a></p>
 
 ---
 
-Knowledge Base Builder is an **Obsidian-adapted, agent-agnostic Skill** that guides you to scaffold a structured "second brain" knowledge base in about 3 minutes, then turns deposited material into reusable knowledge cards. Any agent with "read/write files + ask questions" capabilities can run it.
+`yy-obsidian-second-brain` is an **Obsidian-adapted, agent-agnostic Skill** that guides you to scaffold a structured "second brain" knowledge base in about 3 minutes, then turns deposited material into reusable knowledge cards. Any agent with "read/write files + ask questions" capabilities can run it.
 
 You don't need any knowledge-management theory. Say "help me build a knowledge base", answer a few questions, and it generates a structure deterministically with a script — **no missing folders, no duplicates, sensible defaults when you don't have an answer yet**. Later say "sync-learn my deposited knowledge" and it turns each item in `00-Inbox/待沉淀/` into a structured note in `10-Areas/`, asks after each one whether you want to "learn" it, learns the ones you pick via learn-anything-fast, and marks a √ beside the notes you've learned.
 
@@ -80,13 +80,13 @@ The brain folder (`90-your-brain/`) comes with 6 files at once: `README` (manual
 Tell your agent:
 
 ```text
-Install this Skill: https://github.com/ivercurry99/obsidian-knowledge-builder
+Install this Skill: https://github.com/ivercurry99/yy-obsidian-second-brain
 ```
 
 **Option 2: use the command**
 
 ```shell
-npx skills add ivercurry99/obsidian-knowledge-builder
+npx skills add ivercurry99/yy-obsidian-second-brain
 ```
 
 **After install**, say:
