@@ -1,22 +1,22 @@
 <p align="center">
-  <img src="./assets/readme/hero.svg" width="100%" alt="Obsidian Second Brain：3 分钟搭好你的第二大脑知识库，00-Inbox 到 10-Areas / 20-Projects / 30-Output 四层流转">
+  <img src="./assets/readme/hero.svg" width="100%" alt="Knowledge Base Builder：3 分钟搭好你的第二大脑，00-Inbox 到 10-Areas / 20-Projects / 30-Output 四层流转">
 </p>
 
 <p align="center">
   <a href="./LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-8a5cf5"></a>
-  <a href="https://github.com/ivercurry99/yy-obsidian-second-brain/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ivercurry99/yy-obsidian-second-brain/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/ivercurry99/obsidian-knowledge-builder/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ivercurry99/obsidian-knowledge-builder/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="Python" src="https://img.shields.io/badge/Python-3.10%2B-50a0fa?logo=python&logoColor=white">
   <img alt="Platform" src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows%20%7C%20Linux-4a4a52">
   <img alt="Network" src="https://img.shields.io/badge/network-not%20required-2ea043">
-  <img alt="Last commit" src="https://img.shields.io/github/last-commit/ivercurry99/yy-obsidian-second-brain?color=50a0fa">
-  <img alt="Stars" src="https://img.shields.io/github/stars/ivercurry99/yy-obsidian-second-brain?style=social">
+  <img alt="Last commit" src="https://img.shields.io/github/last-commit/ivercurry99/obsidian-knowledge-builder?color=50a0fa">
+  <img alt="Stars" src="https://img.shields.io/github/stars/ivercurry99/obsidian-knowledge-builder?style=social">
 </p>
 
 <p align="center"><b>English</b>: <a href="./README.en.md">README.en.md</a> · <b>中文</b>: README.md</p>
 
 ---
 
-知识库搭建器（`yy-obsidian-second-brain`）是一个**适配 Obsidian 的 Agent 通用 Skill**：引导你 3 分钟搭出一个结构化的「第二大脑」知识库，并在内容沉淀后帮你把待沉淀内容「学习消化」成可复用知识卡片。任何具备「读写文件 + 提问」能力的 Agent 都能执行。
+知识库搭建器（Obsidian Knowledge Builder）是一个**适配 Obsidian 的 Agent 通用 Skill**：引导你 3 分钟搭出一个结构化的「第二大脑」知识库，并在内容沉淀后帮你把待沉淀内容「学习消化」成可复用知识卡片。任何具备「读写文件 + 提问」能力的 Agent 都能执行。
 
 你不用懂任何知识管理理论，说一句「帮我搭知识库」，它就会问你几个问题，然后用脚本确定地生成一套结构——**不会漏目录、不会重复建，信息没想好也有默认值，不卡你**。之后说一句「同步学习沉淀的知识」，它就会把 `00-Inbox/待沉淀/` 里的资料逐篇「沉淀」成 `10-Areas/` 的结构化笔记，每篇沉淀后问你要不要「学习」，要学习的它调用 learn-anything-fast 帮你学会，学完在笔记旁打个 √。
 
@@ -80,13 +80,13 @@
 告诉你的 Agent：
 
 ```text
-帮我安装「https://github.com/ivercurry99/yy-obsidian-second-brain」这个 Skill。
+帮我安装「https://github.com/ivercurry99/obsidian-knowledge-builder」这个 Skill。
 ```
 
 **方式 2：用命令安装**
 
 ```shell
-npx skills add ivercurry99/yy-obsidian-second-brain
+npx skills add ivercurry99/obsidian-knowledge-builder
 ```
 
 **安装后**，对你的 Agent 说：

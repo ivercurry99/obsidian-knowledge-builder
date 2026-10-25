@@ -1,11 +1,11 @@
 ---
-name: yy-obsidian-second-brain
+name: obsidian-knowledge-builder
 description: 在 Obsidian 中搭建结构化知识库，并在内容沉淀后把待沉淀内容「学习消化」成可复用知识卡片。当用户说"帮我搭知识库""搭建第二大脑""建立知识库结构"时进入创建模式；当用户说"同步学习沉淀的知识""消化待沉淀"时进入同步学习模式。适配 Obsidian（wiki-link、frontmatter、callout、图谱）。不要用于整理已有笔记格式、写单篇笔记、或纯知识管理咨询。
 license: MIT
 compatibility: 骨架脚本仅用 Python 3.10+ 标准库，跨 macOS/Windows/Linux；核心流程只依赖「读写文件、提问」两种通用能力，不依赖特定 Agent 宿主的专有功能；输出为 Obsidian 原生格式（wiki-link、frontmatter、callout），无 Python 时可按 references/file-templates.md 手工创建。
 ---
 
-# yy-obsidian-second-brain
+# obsidian-knowledge-builder
 
 把「搭知识库」和「消化沉淀」变成两条稳定流程。适配 Obsidian：生成的目录结构和产物都用 Obsidian 原生格式（`[[wiki-link]]`、frontmatter、callout），可直接在 Obsidian 里打开使用。
 
