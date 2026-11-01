@@ -57,20 +57,19 @@
       "id": 5,
       "name": "triage-inbox-ideas",
       "prompt": "分拣灵感",
-      "expected_output": "扫描 00-Inbox/灵感/ 下未处理条目（含上次标了 pending-review 的），逐条询问去向，落到五个出口之一：并入已有笔记（追加不新建）/ 转待沉淀（移到 00-Inbox/待沉淀/{领域}/ 交给沉淀路线）/ 成项目（20-Projects/ing）/ 成输出（读 40-Skills/知识视频创作专家/kidd-content-expert.md 按 7 步工作流写脚本，产物放 30-Output/ing/）/ 删除（需确认）。原灵感文件末尾加 √，frontmatter 写 status: sorted、outcome、moved_to",
+      "expected_output": "扫描 00-Inbox/灵感/ 下未处理条目（含上次标了 pending-review 的），逐条询问去向，只给两个出口：并入已有笔记（追加到该领域已有 Areas 笔记，不新建）/ 成输出（读 40-Skills/知识视频创作专家/kidd-content-expert.md 按 7 步工作流写脚本，产物放 30-Output/ing/）。两条都不合适时标 status: pending-review 留在原处。处理完在原灵感文件末尾加 √，frontmatter 写 status: sorted、outcome、moved_to",
       "files": [],
       "expectations": [
         "扫描灵感目录时未处理条目和 pending-review 条目都要列出",
         "逐条询问用户去向，不擅自决定",
-        "领域已有相关 Areas 笔记时并入而不是新建文件",
-        "转待沉淀时移到 00-Inbox/待沉淀/{领域}/，不直接写 Areas 笔记",
-        "成项目时建 20-Projects/ing/ 下的项目笔记，含目标与下一步",
+        "只提供「并入已有笔记」和「成输出」两个出口",
+        "并入时读原笔记并插入内容，不新建文件",
         "成输出时先读 40-Skills/知识视频创作专家/kidd-content-expert.md，按 7 步工作流产出视频脚本",
         "专家文件缺失或题材不匹配时降级为普通选题笔记，不阻塞",
-        "删除前征求用户确认",
+        "两条都不合适时标 pending-review，不打 √、不写 status: sorted",
         "不创建 00-Inbox/灵感/_归档/ 目录",
-        "处理完在原灵感文件写 status: sorted 和 outcome、moved_to",
-        "每条要么有终态标记，要么标 pending-review，没有无标记遗留"
+        "处理完在原灵感文件写 status: sorted 和 outcome（merged 或 output）、moved_to",
+        "没有无标记遗留的条目"
       ]
     },
     {
