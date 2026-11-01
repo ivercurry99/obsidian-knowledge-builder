@@ -46,12 +46,14 @@ map（拆解主题）→ focus（找核心 20%）→ compress（压成卡片）�
 - 文件名末尾加 `√`，如 `原文√.md`
 - frontmatter 标 `outcome: digested`
 
-**Areas 笔记**——用 frontmatter 记录实际发生了什么：
+**Areas 笔记**——学完也在文件名末尾加 `√`（如 `数据分析方法论√.md`），并记 frontmatter：
 
 ```yaml
-status: learned            # 学了标 learned，只沉淀没学标 digested
+status: learned            # 学了标 learned
 output: 30-Output/ing/xxx/ # 做过输出才有这一行
 ```
+
+只沉淀没学的 Areas 笔记不打 `√`，frontmatter 标 `status: digested`。
 
 ## 做成输出（可选）
 

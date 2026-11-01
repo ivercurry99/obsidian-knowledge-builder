@@ -43,7 +43,7 @@
       "id": 4,
       "name": "sync-learn-deposited",
       "prompt": "同步学习沉淀的知识",
-      "expected_output": "扫描 00-Inbox/待沉淀/ 下的资料，逐篇沉淀成 10-Areas 结构化笔记，每篇沉淀后一次问完「要不要学习」「要不要做成输出」两个问题（可多选也可都不选）。选学习 → 调 learn-anything-fast；选输出 → 读 40-Skills/知识视频创作专家/kidd-content-expert.md 按 7 步工作流写脚本，产物进 30-Output/ing/。原文末尾加 √ 标 outcome: digested，Areas 笔记 frontmatter 记 status 与 output",
+      "expected_output": "扫描 00-Inbox/待沉淀/ 下的资料，逐篇沉淀成 10-Areas 结构化笔记，每篇沉淀后一次问完「要不要学习」「要不要做成输出」两个问题（可多选也可都不选）。选学习 → 调 learn-anything-fast；选输出 → 读 40-Skills/知识视频创作专家/kidd-content-expert.md 按 7 步工作流写脚本，产物进 30-Output/ing/。原文末尾加 √ 标 outcome: digested，学完的 Areas 笔记文件名末尾加 √ 并标 status: learned",
       "files": [],
       "expectations": [
         "先扫描待沉淀目录找出资料",
@@ -53,7 +53,9 @@
         "要做输出时调用 40-Skills/知识视频创作专家/kidd-content-expert.md 的 7 步工作流",
         "输出产物写入 30-Output/ing/，不是留在 Areas",
         "原文打 √ 并标 outcome: digested，不再被扫描",
-        "Areas 笔记 frontmatter 记 status: learned / digested，做过输出才写 output 字段"
+        "学完的 Areas 笔记文件名末尾加 √，并标 status: learned",
+        "只沉淀没学的 Areas 笔记不打 √，标 status: digested",
+        "做过输出的 Areas 笔记写 output 字段"
       ]
     },
     {

@@ -135,12 +135,9 @@ compatibility: 骨架脚本仅用 Python 3.10+ 标准库，跨 macOS/Windows/Lin
 两处各记各的，不要混：
 
 - **原文**（还在 `00-Inbox/待沉淀/`）末尾加 `√`，标 `outcome: digested`，表示已沉淀、不再被扫描。
-- **Areas 笔记**用 frontmatter 记录实际发生的后续动作：
+- **Areas 笔记**学完也要打勾：文件名末尾加 `√`（如 `数据分析方法论√.md`），并 frontmatter 标 `status: learned`。
 
-```yaml
-status: learned            # 学了标 learned，只沉淀没学标 digested
-output: 30-Output/ing/xxx/ # 做过输出才有这一行
-```
+只沉淀没学的 Areas 笔记不打 `√`，frontmatter 标 `status: digested`；做过输出的再加一行 `output: 30-Output/ing/{选题}/`。
 
 #### 第 7 步：汇报
 
