@@ -25,7 +25,7 @@ Once built, the three buckets under `00-Inbox/` each have a defined exit, so the
 | Bucket | What you drop in | What it does |
 |---|---|---|
 | `待沉淀/` | Material you've studied but not mastered | Digests it into a structured `10-Areas/` note, asks whether to "learn" it, marks √ after learning |
-| `灵感/` | Ideas that pop into your head | Decides what it becomes: knowledge / merge into an existing note / project / output / delete, then records the outcome |
+| `灵感/` | Ideas that pop into your head | Decides what it becomes: merge into an existing note / move to `待沉淀/` / project / output (invokes the knowledge-video expert to write the script) / delete, then records the outcome |
 | `资源/` | Saved articles and links | Post-read value check: worth it → move to `待沉淀/`, not worth it → delete, unread → keep and ask again next time |
 
 ## Table of contents
