@@ -16,9 +16,17 @@
 
 ---
 
-Knowledge Base Builder is an **Obsidian-adapted, agent-agnostic Skill** that guides you to scaffold a structured "second brain" knowledge base in about 3 minutes, then turns deposited material into reusable knowledge cards. Any agent with "read/write files + ask questions" capabilities can run it.
+Knowledge Base Builder is an **Obsidian-adapted, agent-agnostic Skill** that guides you to scaffold a structured "second brain" knowledge base in about 3 minutes, then keeps digesting your Inbox — deposited material, idea fragments, and saved resources — so everything ends up somewhere. Any agent with "read/write files + ask questions" capabilities can run it.
 
-You don't need any knowledge-management theory. Say "help me build a knowledge base", answer a few questions, and it generates a structure deterministically with a script — **no missing folders, no duplicates, sensible defaults when you don't have an answer yet**. Later say "sync-learn my deposited knowledge" and it turns each item in `00-Inbox/待沉淀/` into a structured note in `10-Areas/`, asks after each one whether you want to "learn" it, learns the ones you pick via learn-anything-fast, and marks a √ beside the notes you've learned.
+You don't need any knowledge-management theory. Say "help me build a knowledge base", answer a few questions, and it generates a structure deterministically with a script — **no missing folders, no duplicates, sensible defaults when you don't have an answer yet**.
+
+Once built, the three buckets under `00-Inbox/` each have a defined exit, so the Inbox **never turns into a second bookmark folder**:
+
+| Bucket | What you drop in | What it does |
+|---|---|---|
+| `待沉淀/` | Material you've studied but not mastered | Digests it into a structured `10-Areas/` note, asks whether to "learn" it, marks √ after learning |
+| `灵感/` | Ideas that pop into your head | Decides what it becomes: knowledge / merge into an existing note / project / output / delete, then records the outcome |
+| `资源/` | Saved articles and links | Post-read value check: worth it → move to `待沉淀/`, not worth it → delete, unread → keep and ask again next time |
 
 ## Table of contents
 
@@ -72,6 +80,7 @@ The brain folder (`90-your-brain/`) comes with 6 files at once: `README` (manual
 - ✅ **Robust**: defaults for incomplete info, step-by-step execution, retryable on error
 - ✅ **Stable**: the skeleton is generated deterministically by a script and refuses to overwrite existing structures
 - ✅ **Structured**: Inbox → Areas → Projects → Output four-layer flow
+- ✅ **No hoarding**: all three Inbox buckets have an exit — deposits get promoted to Areas, ideas get triaged five ways, resources get moved or deleted
 
 ## Quick start
 

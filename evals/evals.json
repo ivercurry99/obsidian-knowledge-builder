@@ -52,6 +52,38 @@
         "要学习时调用 learn-anything-fast（默认 Compress）",
         "学习完在 Areas 笔记旁打勾，不是原文"
       ]
+    },
+    {
+      "id": 5,
+      "name": "triage-inbox-ideas",
+      "prompt": "分拣灵感",
+      "expected_output": "扫描 00-Inbox/灵感/ 下未处理条目（含上次标了 pending-review 的），逐条询问去向，落到五个出口之一：成知识（10-Areas 新建）/ 并入已有笔记（追加不新建）/ 成项目（20-Projects/ing）/ 成输出（30-Output/ing）/ 删除（需确认）。原灵感文件末尾加 √，frontmatter 写 status: sorted、outcome、moved_to",
+      "files": [],
+      "expectations": [
+        "扫描灵感目录时未处理条目和 pending-review 条目都要列出",
+        "逐条询问用户去向，不擅自决定",
+        "领域已有相关 Areas 笔记时并入而不是新建文件",
+        "成项目时建 20-Projects/ing/ 下的项目笔记，含目标与下一步",
+        "删除前征求用户确认",
+        "不创建 00-Inbox/灵感/_归档/ 目录",
+        "处理完在原灵感文件写 status: sorted 和 outcome、moved_to",
+        "每条要么有终态标记，要么标 pending-review，没有无标记遗留"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "triage-inbox-resources",
+      "prompt": "清理资源",
+      "expected_output": "扫描 00-Inbox/资源/ 下未处理条目，逐条问「看过吗？值得留吗」，有价值的移到 00-Inbox/待沉淀/{对应领域}/ 交给待沉淀路线，没价值或不想看的删除，打算看但还没看的留在原处不打 √、下次扫描重新问",
+      "files": [],
+      "expectations": [
+        "扫描资源目录找出未处理条目",
+        "逐条询问读过没有、值不值得留",
+        "有价值的转到待沉淀目录，而不是直接写 Areas 笔记",
+        "删除前征求用户确认",
+        "打勾时标 outcome: to-pending 或 deleted",
+        "汇报里区分转入待沉淀 / 删除 / 仍留待读的数量"
+      ]
     }
   ]
 }
