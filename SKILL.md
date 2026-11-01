@@ -16,7 +16,7 @@ compatibility: 骨架脚本仅用 Python 3.10+ 标准库，跨 macOS/Windows/Lin
 | 模式 | 触发 | 路径 |
 |------|------|------|
 | 创建 | 用户说「帮我搭知识库」「搭建第二大脑」「建立知识库结构」 | 收集信息 → 生成骨架 → 交付确认 |
-| 消化 Inbox | 用户说「同步学习沉淀的知识」「消化待沉淀」「分拣灵感」「整理 Inbox」「清理资源」 | 扫描三个桶 → 按桶分流 → 每条落位或删除 → 汇报 |
+| 消化 Inbox | 用户说「同步学习沉淀的知识」「消化待沉淀」「分拣灵感」「整理 Inbox」「清理资源」 | 扫描三个桶 → 按桶分流 → 每条落位或暂缓 → 汇报 |
 
 **Inbox 不是仓库，是流水线。** `00-Inbox/` 下三个桶，每条进来都必须有终点，不允许「什么都不做，一直躺在 Inbox」：
 
@@ -204,7 +204,7 @@ moved_to: 10-Areas/数据分析/xxx.md
 |---------|--------|
 | 四层流转的设计原理 | [references/design-principles.md](references/design-principles.md) |
 | 目录结构与文件模板 | [references/file-templates.md](references/file-templates.md) |
-| 同步学习的卡片格式与调用 | [references/learning-sync.md](references/learning-sync.md) |
+| 沉淀与学习的卡片格式与调用 | [references/learning-sync.md](references/learning-sync.md) |
 | 一个完整示例 | [examples/数据分析师示例.md](examples/数据分析师示例.md) |
 
 ## 稳定与恢复
