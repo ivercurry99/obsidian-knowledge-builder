@@ -24,7 +24,7 @@ Once built, the three buckets under `00-Inbox/` each have a defined exit, so the
 
 | Bucket | What you drop in | What it does |
 |---|---|---|
-| `待沉淀/` | Material you've studied but not mastered | Digests it into a structured `10-Areas/` note, asks whether to "learn" it, marks √ after learning |
+| `待沉淀/` | Material you've studied but not mastered | Digests it into a structured `10-Areas/` note, then asks per note whether to "learn" it or "turn it into output"; both optional, marks √ after learning |
 | `灵感/` | Ideas that pop into your head | Two exits: merge into an existing note, or become an output (invokes the knowledge-video expert to write the script); otherwise it stays pending |
 | `资源/` | Good projects and tools found online | Usability check: if you'll use it, log it into the `40-Skills/` toolbox; if not, delete; if unsure, keep and ask again next time |
 

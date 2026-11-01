@@ -37,14 +37,27 @@
 map（拆解主题）→ focus（找核心 20%）→ compress（压成卡片）→ teach-back（费曼自检）
 ```
 
-## 学习完打勾（标记「已学习」）
+## 打勾与状态记录
 
-学习完成后，在这篇 **Areas 笔记**旁打勾，二选一：
+两处各记各的，不要混：
 
-- **文件名末尾加 √**：如 `数据分析方法论√.md`
-- 或 **frontmatter 标 `status: learned`**
+**原文**（还在 `00-Inbox/待沉淀/`）——沉淀完就打勾，表示已处理、不再被扫描：
 
-表示「已学习」。用户没选择学习的笔记不打勾，保留原样。
+- 文件名末尾加 `√`，如 `原文√.md`
+- frontmatter 标 `outcome: digested`
+
+**Areas 笔记**——用 frontmatter 记录实际发生了什么：
+
+```yaml
+status: learned            # 学了标 learned，只沉淀没学标 digested
+output: 30-Output/ing/xxx/ # 做过输出才有这一行
+```
+
+## 做成输出（可选）
+
+沉淀完的 Areas 笔记可以直接走成输出：读 `40-Skills/知识视频创作专家/kidd-content-expert.md`，按它的 7 步工作流把笔记扩成视频 / 文章脚本，产物写入 `30-Output/ing/{选题}/`，完成后在 Areas 笔记 frontmatter 补 `output` 字段。
+
+学习和输出是两件独立的事：只学不输出、只输出不学、两者都做都行。
 
 ## Obsidian 适配
 
